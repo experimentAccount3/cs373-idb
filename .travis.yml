@@ -19,10 +19,10 @@ install:
 before_script:
   - psql -c 'create database testing_db;' -U postgres
 script:
-  - nosetests tests.py --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_cs373-idb_c28a653d9f_3
-  - python -m properform Push 47.88.50.110:15554 asdf_cs373-idb_c28a653d9f_3 ./profile_cs373-idb_c28a653d9f_3
+  - nosetests tests.py --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_cs373-idb_c28a653d9f_4
+  - python -m properform Push 47.88.50.110:15554 asdf_cs373-idb_c28a653d9f_4 ./profile_cs373-idb_c28a653d9f_4
   - bash travis.bash
 
 env:
   global:
-    secure: "DSZxg9+1wRtSz9BWt+rDM6WnfW6nUlqbQEoVvsZT8kcut6tZwRKY7fHIGH9A/bqUVinADQ7791QtUcMch6w87ZWix7u4FuPLEpL6QX4C8nvhWrLdcEA4kPQHIN3ok8JFLgKr+2hvd7TWyZe7YacWzfBx/taw6tR+SdE7ey0u2sw=" #2017-09-16 13:26:01 modified at 0 #2017-09-16 13:26:05 modified at 1 #2017-09-16 13:26:10 modified at 2 #2017-09-16 13:26:14 modified at 3
+    secure: "DSZxg9+1wRtSz9BWt+rDM6WnfW6nUlqbQEoVvsZT8kcut6tZwRKY7fHIGH9A/bqUVinADQ7791QtUcMch6w87ZWix7u4FuPLEpL6QX4C8nvhWrLdcEA4kPQHIN3ok8JFLgKr+2hvd7TWyZe7YacWzfBx/taw6tR+SdE7ey0u2sw=" #2017-09-16 13:26:01 modified at 0 #2017-09-16 13:26:05 modified at 1 #2017-09-16 13:26:10 modified at 2 #2017-09-16 13:26:14 modified at 3 #2017-09-16 13:26:19 modified at 4
